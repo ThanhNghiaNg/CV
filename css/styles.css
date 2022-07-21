@@ -1,0 +1,156 @@
+body {
+    margin: 0px;
+}
+div{
+    font-size: 14px;
+    text-align: justify;
+}
+
+.cv-document {
+	box-sizing: border-box;
+	border: none;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	font-family: arial, sans-serif, tahoma;
+	font-size: 10pt;
+}
+
+.cv-page {
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    text-decoration: none;
+    width: 900px;
+    min-height: 900px;
+    margin: 0 auto;
+    box-shadow: 0 0 1px rgba(0,0,0,.5);
+    background-color: #fff;
+    position: relative;
+
+    padding: 40px
+}
+.section-content{
+    position: relative;
+}
+.section-title{
+    padding-top:30px;
+    text-transform: uppercase;
+}
+/* Infor */
+#info{
+    /* background-color: #f0f8ff; */
+}
+.name{
+    color:  #0e2452;
+    font-size: 35px;
+}
+.inl-block-field{
+    display: inline-block;
+    margin-right:35px;
+    margin-bottom:15px;
+    width: 80px;
+    font-weight: bold;
+}
+.inl-block-detail{
+    display: inline;
+}
+/* .inl-block-detail::before {
+    content: "";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid gray;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent gray;
+  } */
+.avatar{
+    width: 15%;
+    display: inline-block;
+    position: absolute;
+    top:0px;
+    right:0px;
+}
+/* Đặt gạch dưới cho các đề mục quan trọng */
+.underline{
+    padding-bottom:5px;
+    border-bottom: solid 2px;
+}
+/* Tạo stle cho thời gian - nội dung */
+#duration{
+    width: 200px;
+    margin-right:50px;
+    margin-bottom:0px;
+    font-weight: normal;
+}
+/* Tạo khoảng cách trắng theo sau thời gian - nội dung */
+#empty-space{
+    width: 200px;
+    margin-right:50px;
+}
+/* Tạo gạch dưới phân cách các nội dung chi tiết trong các đề mục quan trọng*/
+.section-content-detail{
+    padding: 10px ;
+    border-bottom: 1px solid rgba(128, 128, 128,0.2);
+    font-weight: normal;
+}
+/* In đậm với các kỹ năng trong mục Kỹ năng */
+#skill{
+    font-weight: bold;
+}
+/* Viết hoa các đề mục quan trọng */
+.project-title{
+    text-transform: uppercase;
+    padding: 1 auto;
+    margin: 0 auto;
+}
+/* Nâng cao: Tạo thanh thời gian*/
+.time-line{
+    /* list-style-type: none; */
+    /* content: "+"; */
+    font-size: 160%;
+  }
+  
+  li {
+    position: relative;
+    margin: 0;
+    padding-bottom: 1px;
+    padding-left: 10px;
+  }
+  
+  /* Dùng li::before để tạo thanh thời gian */
+  .time-line li:before {
+    content: '';
+    font-size: 240%;
+    /* background-color: rgba(128, 128, 128, 0.4); */
+    border-left: dashed 2px rgba(0,0,0,0.1);
+    /* padding-left:100px; */
+    position: absolute;
+    bottom: 0px;
+    top: 0px;
+    left: -16px;
+    width: 1px;
+    
+  }
+  div time-line li:before{
+    content: '';
+    font-size: 240%;
+    /* background-color: rgba(128, 128, 128, 0.4); */
+    border-left: dashed 2px rgba(0,0,0,0.1);
+    /* padding-left:100px; */
+    position: absolute;
+    bottom: 0px;
+    top: 0px;
+    left: -16px;
+    width: 1px;
+  }
