@@ -1,222 +1,401 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<title>Assignment 01</title>
-		<meta name="robots" content="noindex" />
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/">
+	<link rel="stylesheet" href="css/font.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+	<title>Assignment 02</title>
+</head>
+<body>
+	<div id="banner" >
+		<img src="./images/myBanner.jpg" alt="background-avatar" class="background-avatar">
+		<div class="text-inside-image">
+			<h1>Nguyễn Thành Nghĩa</h1>
+			<span class="position">Full Stack Developer</span>
+		</div>
+	</div>
 
-		<link rel="stylesheet" href="./css/styles.css" />
-	</head>
+	<section id="nav-bar">
+		<nav class="container nav-container">
+			<div class="nav-items">
+				<a href="#about">Thông tin</a>
+				<i class="icon icon-user"></i> 
+			</div>
+			<div class="nav-items">
+				<a href="#job-info">Lý lịch</a>
+				<i class="icon icon-doc-text-inv"></i> 
+			</div>
+			<div class="name-inside-nav">
+				<p>Nguyễn Thành Nghĩa</p>
+				<span class="position">Full Stack Developer</span>
+			</div>
+			<div class="avatar">
+				<img src="./images/avatar_org.jpg" alt="my avatar" class="img-avatar">
+			</div>
+			<div class="nav-items">
+				<a href="#certificate">Chứng chỉ</a>
+				<i class="icon icon-mail-alt"></i> 
+			</div>
+			<div class="nav-items">
+				<a href="#project">Dự Án</a>
+				<i class="icon icon-star-1"></i> 
+			</div>
+		</nav>
+	</section>
 
-	<body>
-		<div class="cv-document">
-			<div class="cv-page">
-				<div class="section" id="info">
-					<h2 class="section-title"></h2>
-					
-					
-					<div class="section-content">
-						<div><img src="images/avatar.png" alt="avatar" class="avatar"></div>
-						<h1 class="name">Nguyễn Thành Nghĩa</h1>
-							<div class="inl-block-field">Ngày sinh</div> <div class="inl-block-detail">26/10/2001</div><br>
-							<div class="inl-block-field">Giới tính</div> <div class="inl-block-detail">Nam</div><br>
-							<div class="inl-block-field">Điện thoại</div> <div class="inl-block-detail">(+84) 377369089</div><br>
-							<div class="inl-block-field">Email</div> 	<div class="inl-block-detail">nghiantfx18031@funix.edu.vn</div><br>
-							<div class="inl-block-field">Địa chỉ</div> <div class="inl-block-detail">Đồng Nai, Việt Nam</div><br>
-							<div class="inl-block-field">Website</div> <div class="inl-block-detail"></div><br>
-					</div>
-				</div>				
-
-				<div class="section" id="target">
-					<h2 class="section-title underline">Mục tiêu nghề nghiệp</h2>
-					<div class="section-content">
-						Là một sinh viên đã hoàn thành chương trình chứng chỉ Doanh Nghiệp của FUNiX. 
-						Em mong muốn mình sẽ được làm việc với vị trí Fullstack Developer, 
-						có thể vận dụng những kiến thức đã trau dồi và không ngừng học hỏi để phát triển bản thân, 
-						cũng như hoàn thành tốt nhất công việc được giao.
-					</div>
+	<section id="about" >
+		<div class="container about-container">
+			<div id="target">
+				<h1 class="section-title">Mục tiêu nghề nghiệp</h1>
+				<p>
+					Là một sinh viên đã hoàn thành chương trình chứng chỉ Doanh
+					Nghiệp của FUNiX. Em mong muốn mình sẽ được làm việc với vị
+					trí <b>Fullstack Developer</b>, có thể vận dụng những kiến
+					thức đã được trau dồi và không ngừng học hỏi để phát triển
+					bản thân, cũng như hoàn thành tốt nhất công việc được giao.
+				</p>
+			</div>
+			<div id="personal-info" >
+				<h1 class="section-title" >Thông tin cá nhân</h1>
+				<ul class="mt-40 info">
+					<li><span>Giới tính</span> : Nam</li>
+					<li><span>Ngày sinh</span> : 26/10/2001</li>
+					<li><span>Điện thoại</span> : (+84) 377369089</li>
+					<li><span>Email</span> : nghiantfx18031@funix.edu.vn</li>
+					<li><span>Địa chỉ</span> : Tân Triều, Tân Bình, Vĩnh Cửu, Đồng Nai</li>
+					<li><span>Website</span> : https://abc.tech</li>
+				</ul>
+				<div class="icons">
+					<a class="link-icon" href="#">
+						<svg class="icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+						viewBox="0 0 30 30"
+						style=" fill:#1DA1F2;">    <path d="M28,6.937c-0.957,0.425-1.985,0.711-3.064,0.84c1.102-0.66,1.947-1.705,2.345-2.951c-1.03,0.611-2.172,1.055-3.388,1.295 c-0.973-1.037-2.359-1.685-3.893-1.685c-2.946,0-5.334,2.389-5.334,5.334c0,0.418,0.048,0.826,0.138,1.215 c-4.433-0.222-8.363-2.346-10.995-5.574C3.351,6.199,3.088,7.115,3.088,8.094c0,1.85,0.941,3.483,2.372,4.439 c-0.874-0.028-1.697-0.268-2.416-0.667c0,0.023,0,0.044,0,0.067c0,2.585,1.838,4.741,4.279,5.23 c-0.447,0.122-0.919,0.187-1.406,0.187c-0.343,0-0.678-0.034-1.003-0.095c0.679,2.119,2.649,3.662,4.983,3.705 c-1.825,1.431-4.125,2.284-6.625,2.284c-0.43,0-0.855-0.025-1.273-0.075c2.361,1.513,5.164,2.396,8.177,2.396 c9.812,0,15.176-8.128,15.176-15.177c0-0.231-0.005-0.461-0.015-0.69C26.38,8.945,27.285,8.006,28,6.937z"></path></svg>
+					</a>
+					<a class="link-icon" href="#">
+						<svg class="icon"  xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+						viewBox="0 0 48 48"
+						style=" fill:#000000;"><path fill="#FFC107" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"></path><path fill="#FF3D00" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"></path><path fill="#4CAF50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"></path><path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"></path></svg>
+					</a>
+					<a class="link-icon" href="https://www.facebook.com/nghiant089/" target="_blank">
+						<svg class="icon"  xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+						viewBox="0 0 48 48"
+						style=" fill:#000000;"><linearGradient id="Ld6sqrtcxMyckEl6xeDdMa_uLWV5A9vXIPu_gr1" x1="9.993" x2="40.615" y1="9.993" y2="40.615" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#2aa4f4"></stop><stop offset="1" stop-color="#007ad9"></stop></linearGradient><path fill="url(#Ld6sqrtcxMyckEl6xeDdMa_uLWV5A9vXIPu_gr1)" d="M24,4C12.954,4,4,12.954,4,24s8.954,20,20,20s20-8.954,20-20S35.046,4,24,4z"></path><path fill="#fff" d="M26.707,29.301h5.176l0.813-5.258h-5.989v-2.874c0-2.184,0.714-4.121,2.757-4.121h3.283V12.46 c-0.577-0.078-1.797-0.248-4.102-0.248c-4.814,0-7.636,2.542-7.636,8.334v3.498H16.06v5.258h4.948v14.452 C21.988,43.9,22.981,44,24,44c0.921,0,1.82-0.084,2.707-0.204V29.301z"></path></svg>
+					</a>
+					<a class="link-icon" href="https://www.linkedin.com/in/nghia-nguyen-thanh/" target="_blank">
+						<svg class="icon"  xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+						viewBox="0 0 48 48"
+						style=" fill:#000000;"><path fill="#0288d1" d="M24 4A20 20 0 1 0 24 44A20 20 0 1 0 24 4Z"></path><path fill="#fff" d="M14 19H18V34H14zM15.988 17h-.022C14.772 17 14 16.11 14 14.999 14 13.864 14.796 13 16.011 13c1.217 0 1.966.864 1.989 1.999C18 16.11 17.228 17 15.988 17zM35 24.5c0-3.038-2.462-5.5-5.5-5.5-1.862 0-3.505.928-4.5 2.344V19h-4v15h4v-8c0-1.657 1.343-3 3-3s3 1.343 3 3v8h4C35 34 35 24.921 35 24.5z"></path></svg>
+					</a>
 				</div>
+			</div>
+				
+		</div>
+	</section>
 
-				<div class="section" id="education">
-					<h2 class="section-title underline">Học vấn</h2>
-					<div class="section-content">
-						<ul class="time-line">
-							<!-- <li>
-								<div class="section-content-detail">
-									<div class="inl-block-field" id="duration">07/2022 - 12/2022</div>
-									<div class="inl-block-detail"> <strong>FUNiX</strong></div><br>
-									<div class="inl-block-field" id="empty-space"></div>
-									<div class="inl-block-detail"> Tốt nghiệp chứng chỉ doanh nghiệp nhánh Fullstack. </div> <br>
-									<div class="inl-block-field" id="empty-space"></div>
-									<div class="inl-block-detail"> GPA: 9/10</div> <br>
-								</div>
-							</li> -->
-							<li>
-								<div class="section-content-detail">
-									<div class="inl-block-field" id="duration">08/2019 - 02/2023</div>
-									<div class="inl-block-detail"> <strong>Cử nhân - Đại học Công Nghệ Thông tin (UIT)</strong></div><br>
-									<div class="inl-block-field" id="empty-space"></div>
-									<div class="inl-block-detail"> Chuyên ngành: Khoa học máy tính. </div> <br>
-									<div class="inl-block-field" id="empty-space"></div>
-									<div class="inl-block-detail"> GPA hiện tại: 8.53/10</div> <br>
-								</div>
-							</li>
-							
-						</ul>
+	<section id="job-info">
+		<div class="container job-info-container">
+			<div class="column">
+				<div class="inside-job-info" style="margin-top: 20px">
+					<div class="title-inside-detail">
+						<h1 class="section-title">Kinh nghiệm</h1>
+						<i class="ic-toolbox" style="font-size: 50px; justify-self: center;"></i>
+					</div>					
+					<ul class="inside-ul">
+						<li>
+							<div class="details">
+								<p>Full Stack Developer - Công ty Y</p>
+								<p>05/2022 - <span class="now">Hiện tại</span></p>
+								<p>- Xây dựng, phát triển Website dựa trên thiết kế và yêu cầu đã có.<br>
+									- Phân tích và thiết kế Database, sữ dụng các hệ quản trị CSDL (MySQL, SQL Server, NoSQL, ...) và viết được các câu truy vấn.<br>
+									- Sử dụng ngôn ngữ server-side (Python, Java, ...) Để xây dựng các Web Service.</p>
+							</div>
+						</li>
+						<li>						
+							<div class="details">
+								<p>Web Designer - Công ty X</p>
+								<p>06-2021-04/2022</p>
+								<p>- Thiết kế Website dựa trên yêu cầu của khách hàng.<br>
+									- Sử dụng các công cụ Figma, Canva, PTS.</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="inside-job-info" style="margin-top: 20px">
+					<div class="title-inside-detail">
+						<h1 class="section-title">Sở thích</h1>
+						<i class="ic-telescope" style="font-size: 50px; justify-self: center;"></i>
+					</div>
+					<div class="hobby">
+						<div class="detail-hobby">
+							<div class="contain-icon">
+								<i class="ic-megaphone hobby-icon"></i>
+							</div>
+							<p>Âm nhạc</p>
+						</div>
+						<div class="detail-hobby">
+							<div class="contain-icon">
+								<i class="ic-strategy hobby-icon"></i>
+							</div>
+							<p>Chơi game</p>
+						</div>
+						<div class="detail-hobby">
+							<div class="contain-icon">
+								<i class="ic-hotairballoon hobby-icon"></i>
+							</div>
+							<p>Du lịch</p>
+						</div>
 						
-					</div>
-				</div>
-
-				<div class="section" id="experience">
-					<h2 class="section-title underline">Kinh nghiệm làm việc</h2>
-					<div class="section-content">
-						<ul class="time-line">
-							<li>
-								<div class="section-content-detail">
-									<div class="inl-block-field" id="duration">05/2022 - Hiện tại</div>
-									<div class="inl-block-detail"> <strong>Công ty Y</strong></div><br>
-									<div class="inl-block-field" id="empty-space"></div>
-									<div class="inl-block-detail"> Full Stack Developer </div> <br>
-									<div class="inl-block-field" id="empty-space"></div>
-									<div class="inl-block-detail">- Xây dựng, phát triển Website dựa trên thiết kế và yêu cầu đã có.</div> <br>
-									<div class="inl-block-field" id="empty-space"></div>
-									<div class="inl-block-detail">- Phân tích và thiết kế Database, sữ dụng các hệ quản trị CSDL (MySQL, SQL Server, </div> <br>
-									<div class="inl-block-field" id="empty-space"></div>
-									<div class="inl-block-detail"> NoSQL, ...) và viết được các câu truy vấn.</div> <br>
-									<div class="inl-block-field" id="empty-space"></div>
-									<div class="inl-block-detail">- Sử dụng ngôn ngữ server-side (Python, Java, ...) Để xây dựng các Web Service.</div> <br>
-								</div>
-							</li>
-							<li>
-								<div class="section-content-detail">
-									<div class="inl-block-field" id="duration">06/2021-04/2022</div>
-									<div class="inl-block-detail"> <strong>Công ty X</strong></div><br>
-									<div class="inl-block-field" id="empty-space"></div>
-									<div class="inl-block-detail"> Web Designer </div> <br>
-									<div class="inl-block-field" id="empty-space"></div>
-									<div class="inl-block-detail">- Thiết kế Website dựa trên yêu cầu của khách hàng.</div> <br>
-									<div class="inl-block-field" id="empty-space"></div>
-									<div class="inl-block-detail">- Sử dụng các công cụ Figma, Canva, PTS.</div> <br>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="section" id="activity">
-					<h2 class="section-title underline">Hoạt động</h2>
-					<div class="section-content">
-						<ul class="time-line">
-							<li>
-								<div class="section-content-detail">
-									<div class="inl-block-field" id="duration">02/2021 - 02/2022</div>
-									<div class="inl-block-detail"> <strong>Câu lạc bộ CS UIT</strong></div><br>
-									<div class="inl-block-field" id="empty-space"></div>
-									<div class="inl-block-detail">- Học hỏi và nghiên cứu về thị giác máy tính </div> <br>
-									<div class="inl-block-field" id="empty-space"></div>
-									<div class="inl-block-detail">- Tham gia gán nhãn dữ liệu hình ảnh cho các tác vụ máy học và trí tuệ nhân tạo</div> <br>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="section" id="skill">
-					<h2 class="section-title underline">Kỹ năng</h2>
-					<div class="section-content">
-						<div class="section-content-detail">
-							<div class="inl-block-field " id="skill">C/C++</div>
-							<div class="inl-block-detail">Fundamental</div><br>
-							<div class="inl-block-field " id="skill">HTML/CSS</div>
-							<div class="inl-block-detail">Fundamental</div><br>
-							<div class="inl-block-field " id="skill">Javascript</div>
-							<div class="inl-block-detail">Fundamental</div><br>
-							<div class="inl-block-field " id="skill">Python</div>
-							<div class="inl-block-detail">Intermediate</div><br>
+						<div class="detail-hobby">
+							<div class="contain-icon">
+								<i class="ic-basket hobby-icon"></i>
+							</div>
+							<p>Nấu ăn</p>
 						</div>
 					</div>
 				</div>
-
-				<div class="section" id="certificate">
-					<h2 class="section-title underline">Chứng chỉ - Giải thưởng</h2>
-					<div class="section-content">
-						<div class="section-content-detail">
-							<div class="inl-block-field" id="duration">06/2022</div>
-							<div class="inl-block-detail"> <a href="https://www.hackerrank.com/certificates/249c3a516147">SQL (Basic)</a> </div> <br>
+			</div>
+			<div>
+				<div class="inside-job-info" style="margin-top: 20px">
+					<div class="title-inside-detail">
+						<h1 class="section-title">Học vấn</h1>
+						<i class="ic-pencil" style="font-size: 50px; justify-self: center;"></i>
+					</div>
+					<ul class="inside-ul">
+						<li>
+							<div class="details">
+								<p>Cử nhân - Đại học Công Nghệ Thông tin</p>
+								<p>08/2019 - 02/2023</p>
+								<p>- Chuyên ngành: Khoa học máy tính.<br>
+									- GPA hiện tại: 8.53/10</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="inside-job-info" style="margin-top: 20px">
+					<div class="title-inside-detail">
+						<h1 class="section-title">Ngôn ngữ</h1>
+						<i class="ic-mic" style="font-size: 50px; justify-self: center;"></i>
+					</div>
+					<div class="detail-level">
+						<div>
+							<p>Tiếng Anh - TOEIC 420</p>
+							<span class="level"></span>
+							<span class="level not-level"></span>
+							<span class="level not-level"></span>
 						</div>
-						<div class="section-content-detail">
-							<div class="inl-block-field" id="duration">02/2022</div>
-							<div class="inl-block-detail"> <a href="https://www.coursera.org/account/accomplishments/certificate/3RS72LRGHJEB">Ask Questions to Make Data-Driven Decisions</a> </div> <br>
+					</div>
+					
+				</div>
+			</div>
+			<div>
+				<div class="inside-job-info" style="margin-top: 20px">
+					<div class="title-inside-detail">
+						<h1 class="section-title">Hoạt động</h1>
+						<i class="ic-toolbox" style="font-size: 50px; justify-self: center;"></i>
+					</div>
+					<ul class="inside-ul">
+						<li>
+							<div class="details">
+								<p>Câu lạc bộ CS UIT</p>
+								<p>02/2021 - 02/2022</p>
+								<p>- Học hỏi và nghiên cứu về thị giác máy tính<br>
+									- Tham gia gán nhãn dữ liệu hình ảnh cho các tác vụ máy học và trí tuệ nhân tạo</p>
+							</div>
+						</li>
+					</ul>
+				</div>			
+				<div class="inside-job-info" style="margin-top: 20px">
+					<div class="title-inside-detail">
+						<h1 class="section-title">Kỹ năng</h1>
+						<i class="ic-tools-2" style="font-size: 50px; justify-self: center;"></i>
+					</div>
+					<div class="detail-level">
+						<div>
+							<p>HTML/CSS: Fundamental</p>
+							<span class="level"></span>
+							<span class="level not-level"></span>
+							<span class="level not-level"></span>
 						</div>
-						<div class="section-content-detail">
-							<div class="inl-block-field" id="duration">10/2021</div>
-							<div class="inl-block-detail"> <a href="https://www.coursera.org/account/accomplishments/certificate/VC52JKCA8NTM">Foundation: Data, Data, Everywhere</a> </div> <br>
+						<div>
+							<p>JavaScript: Fundamental</p>
+							<span class="level"></span>
+							<span class="level not-level"></span>
+							<span class="level not-level"></span>
 						</div>
-						<div class="section-content-detail">
-							<div class="inl-block-field" id="duration">2021-2022</div>
-							<div class="inl-block-detail">Học bổng khuyến khích học tập của trường (UIT) </div> <br>
+						<div>
+							<p>C/C++: Intermediate</p>
+							<span class="level"></span>
+							<span class="level"></span>
+							<span class="level not-level"></span>
+						</div>
+						<div>
+							<p>Python: Intermediate</p>
+							<span class="level"></span>
+							<span class="level"></span>
+							<span class="level not-level"></span>
 						</div>
 					</div>
 				</div>
+			</div>
 
-				<div class="section" id="hobby">
-					<h2 class="section-title underline">Sở thích</h2>
-					<div class="section-content">
-						<ul>
-							<li>Nghe nhạc</li>
-							<li>Chơi game</li>
-							<li>Đọc sách</li>
-							<li>Nấu ăn</li>
-						</ul>
-					</div>
+		</div>
+	</section>
+
+	<section id="certificate" class="bg-grey">
+		<h1 class="section-title">
+			Chứng chỉ - Giải thưởng
+		</h1>
+		<div class="container cert-container">
+			<div class="detail-cert">
+				<img src="./images/Cert_Gool2.png" class="cert-img">
+				<div class="cert-description">
+					<p>Ask Questions to Make Data-Driven Decisions</p>
+					<p>Chứng chỉ thuộc chương trình Google Data Analytics Professional</p>
 				</div>
-
-				<div class="section" id="project">
-					<h2 class="section-title underline">Dự án</h2>
-					<div class="section-content">
-						<h2 class="project-title">trang web quản lý thư viện</h2>
-						<div>2021</div>
-						<ul>
-							<li><strong>Vị trí:</strong> Developer</li>
-							<li><strong>Mô tả:</strong> ứng dụng giúp quản lý các thông tin và công việc trong thư viện như: Thông tin sách, tạo phiếu mượn sách, trả sách, ... Bao gồm các chức năng thêm / sửa / xoá.</li>
-							<li><strong>Nhiệm vụ:</strong> Thiết kế biểu mẫu để thu thập dữ liệu, xử lý dữ liệu. Phát triển, tối ưu code và xử lý lỗi.</li>
-							<li><strong>Công nghệ:</strong> HTML, CSS, Python, SQL.</li>
-							<li><a href="https://github.com/thanhnhan311201/CS114.L11.KHCL"><strong>Đường dẫn đến dự án</strong></a></li>
-						</ul>
-
-						<h2 class="project-title">Phân loại chữ viết tay tiếng Việt</h2>
-						<div>2021</div>
-						<ul>
-							<li><strong>Vị trí:</strong> Developer</li>
-							<li><strong>Mô tả:</strong> Phân loại các ký tự trong bảng chữ cái tiếng Việt từ hình ảnh đầu vào là chữ viết tay.</li>
-							<li><strong>Nhiệm vụ:</strong> Thu thập và tiền xử lý dữ liệu. Huấn luyện mô hình máy học. Cung cấp sản phẩm demo.</li>
-							<li><strong>Công nghệ:</strong> Python.</li>
-							<li><a href="https://github.com/thanhnhan311201/CS114.L11.KHCL"><strong>Đường dẫn đến dự án</strong></a></li>
-						</ul>
-						<h2 class="project-title">CV cá nhân</h2>
-						<div>2022</div>
-						<ul>
-							<li><strong>Vị trí:</strong> Developer</li>
-							<li><strong>Mô tả:</strong> Trang Web CV cá nhân online. Gồm các thông tin cá nhân cũng như kỹ năng nghề nghiệp.</li>
-							<li><strong>Nhiệm vụ:</strong> Phát triển, tối ưu code và xử lý lỗi.</li>
-							<li><strong>Công nghệ:</strong> HTML, CSS.</li>
-							<li><a href="https://thanhnghiang.github.io/CV/" target="_blank"><strong>Đường dẫn đến dự án</strong></a></li>
-						</ul>
-					</div>
+			</div>			
+			<div class="detail-cert">
+				<img src="./images/Cert_Gool1.png" class="cert-img">
+				<div class="cert-description">
+					<p>Foundations: Data, Data, Everywhere</p>
+					<p>Chứng chỉ thuộc chương trình Google Data Analytics Professional</p>
 				</div>
-				<footer>
-					<div class="section" id="contact">
-						<h2 class="section-title underline">Liên hệ</h2>
-						<div class="section-content">
-							<ol>
-								<li><a href="https://www.facebook.com/nghiant089/" target="_blank">Facebook</a></li>
-								<li><a href="https://www.linkedin.com/in/nghia-nguyen-thanh/" target="_blank">LinkedIn</a></li>
-								<li><a href="https://github.com/JTNghia" target="_blank">Github</a></li>
-							</ol>
-						</div>
-					</div>
-				</footer>
+			</div>
+			<div class="detail-cert">
+				<img src="./images/Cert_SQL.png" class="cert-img">
+				<div class="cert-description">
+					<p>Chứng chỉ SQL (Cơ bản)</p>
+					<p>Bao gồm các truy vấn đơn giản, quan hệ và tổng hợp</p>
+				</div>
 			</div>
 		</div>
-	</body>
+	</section>
+
+	<section id="project">
+		<div class="container">
+			<h1 class="section-title">
+				Dự án
+			</h1>
+			<div class="container-project">
+				<div class="item-project">
+					<a href="https://thanhnghiang.github.io/CV/" target="_blank" class="detail-project-1">
+						<img src="./images/project_cv.png" alt="project library" class="project-image">
+						<p>CV Cá Nhân</p>
+					</a>
+					<div class="detail-project-2">
+						<div class="now">2022</div>
+						<div>
+							<i class="icon icon-user-1"></i> 
+							<span>FUNiX</span>
+						</div>
+						<div>
+							<i class="icon icon-lamp"></i> 
+							<span>Developer</span>
+						</div>
+					</div>
+					<table class="project-detail-table">
+						<tr>
+							<th>Mô tả</th>
+							<td>Trang Web CV cả nhân online. Gồm các thông tin cá nhân cũng như nghề nghiệp</td>
+						</tr>
+						<tr>
+							<th>Nhiệm vụ</th>
+							<td>- Phát triển code - Review code - Tối ưu code - Xử lý lỗi</td>
+						</tr>
+						<tr>
+							<th class="last-th">Công nghệ</th>
+							<td class="last-td">- HTML, CSS</td>
+						</tr>
+					</table>
+				</div>
+				<div class="item-project">
+					<a href="https://github.com/LongPML/SE104.L23.PMCL" class="detail-project-1" target="_blank">
+						<img src="./images/project_lib.png" alt="project library" class="project-image">
+						<p>trang web quản lý thư viện</p>
+					</a>
+					<div class="detail-project-2">
+						<div class="now">2021</div>
+						<div>
+							<i class="icon icon-user-1"></i> 
+							<span>UIT</span>
+						</div>
+						<div>
+							<i class="icon icon-lamp"></i> 
+							<span>Developer</span>
+						</div>
+					</div>
+					<table class="project-detail-table">
+						<tr>
+							<th>Mô tả</th>
+							<td>Ứng dụng Web quản lý các thông tin và công việc trong thư viện như: 
+								Thông tin sách, tạo phiếu mượn sách, trả sách, ... Bao gồm các chức năng thêm / sửa / xoá.</td>
+						</tr>
+						<tr>
+							<th>Nhiệm vụ</th>
+							<td>- Thiết kế biểu mẫu để thu thập dữ liệu - Xử lý dữ liệu - Phát triển, tối ưu code và xử lý lỗi.</td>
+						</tr>
+						<tr>
+							<th class="last-th">Công nghệ</th>
+							<td class="last-td">- HTML, CSS, Python Django</td>
+						</tr>
+					</table>
+				</div>
+				<div class="item-project">
+					<a href="https://github.com/thanhnhan311201/CS114.L11.KHCL" class="detail-project-1"  target="_blank">
+						<img src="./images/project_ocr.png" alt="project library" class="project-image">
+						<p>PHÂN LOẠI CHỮ VIẾT TAY TIẾNG VIỆT</p>
+					</a>
+					<div class="detail-project-2">
+						<div class="now">2021</div>
+						<div>
+							<i class="icon icon-user-1"></i> 
+							<span>UIT</span>
+						</div>
+						<div>
+							<i class="icon icon-lamp"></i> 
+							<span>Developer</span>
+						</div>
+					</div>
+					<table class="project-detail-table">
+						<tr>
+							<th>Mô tả</th>
+							<td>Phân loại các ký tự trong bảng chữ cái tiếng Việt từ hình ảnh đầu vào là chữ viết tay.</td>
+						</tr>
+						<tr>
+							<th>Nhiệm vụ</th>
+							<td>- Thu thập và tiền xử lý dữ liệu - Huấn luyện mô hình máy học -Tạo sản phẩm demo.</td>
+						</tr>
+						<tr>
+							<th class="last-th">Công nghệ</th>
+							<td class="last-td">- Python</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="footer" class="bg-grey">
+		<div class="container contact-container">
+				<a class="contact-footer" href="https://www.facebook.com/nghiant089/" target="_blank">
+					<i class="icon-facebook-circled" style="font-size: 24px; justify-self: center; color:#4267B2;"></i>
+					Facebook
+				</a>
+				<a class="contact-footer" href="https://www.linkedin.com/in/nghia-nguyen-thanh/" target="_blank">
+					<i class="icon-linkedin-circled" style="font-size: 24px; justify-self: center; color:#0072b1;"></i>
+					Linkedin
+				</a>
+				<a class="contact-footer" href="https://github.com/JTNghia" target="_blank">
+					<i class="icon-github-circled" style="font-size: 24px; justify-self: center; color:#171515;"></i>
+					Github
+				</a>
+			</ul>
+		</div>
+	</section>
+</body>
 </html>
