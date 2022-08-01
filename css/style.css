@@ -67,9 +67,12 @@ section .nav-container{
     text-transform: uppercase;
     justify-content: center;
     align-items: center;
+    align-content: center;
     flex-direction: row;
-    gap:40px;
+    gap:30px;
     position: relative;
+    margin: 0px auto;
+    padding: 0px;
 }
 .icon{
     color: #199cdb;
@@ -104,6 +107,10 @@ section .nav-container{
     left:50%;
     transform: translate(-50%,-50%);
 }
+.nav-items{
+    padding: 15px;
+    border-left: #dee2e6 solid 1px;
+}
     /* About Section */
 #about .about-container{
     display: grid;
@@ -117,16 +124,18 @@ section .nav-container{
 }
 #target{
     background-color: #f7f7f7;
-    padding: 70px ;
+    padding: 70px;
     line-height: 1.5;
     width: 100%;
     padding-right: 30px;
+    padding-top: 100px;
 }
 #personal-info{
     background-color: #f1f3f5;
     padding: 70px;
     width: 100%;
     padding-left: 30px;
+    padding-top: 100px;
 }
 .info{
     list-style: none;
