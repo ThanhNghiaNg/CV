@@ -28,9 +28,8 @@ section > .container{
 .container{
     padding: 0px;
 }
-                                /* Banner Section */
+    /* Banner Section */
 #banner{
-    /* height: 10vh; */
     width: 1170px;
     margin: 0 auto;
     
@@ -53,7 +52,7 @@ section > .container{
 .position{
     color: #ced4da;
 }
-                                /* Navbar Section */
+    /* Navbar Section */
 a:link,
 a:visited{
     text-decoration: none;
@@ -63,17 +62,6 @@ a:hover,
 a:active{
     color: #212529;
 }
-/* .nav-items a:link,
-.nav-items a:visited{
-    text-decoration: none;
-    color: #495057;
-    
-}
-.nav-items a:hover,
-.nav-items a:active{
-    color: #212529;
-    
-} */
 section .nav-container{
     display: flex;
     text-transform: uppercase;
@@ -89,15 +77,14 @@ section .nav-container{
 .name-inside-nav{
     display: flex;
     flex-direction: column;
-    /* align-items: flex-start; */
     justify-content: flex-start;
 }
 .name-inside-nav p{
-    color: #087f5b;
+    color: #212529;
     font-size: 20px;
 }
 .name-inside-nav span{
-    color: #12b886;
+    color: #868e96;
     font-size: 14px;
 }
 .avatar{
@@ -105,7 +92,6 @@ section .nav-container{
     height: 250px;
     border-radius: 50%;
     border: solid #f8f9fa 10px;
-    /* display:inline-block; */
     overflow: hidden;
     vertical-align:middle;
     position: absolute;
@@ -118,7 +104,7 @@ section .nav-container{
     left:50%;
     transform: translate(-50%,-50%);
 }
-                                /* About Section */
+    /* About Section */
 #about .about-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -127,7 +113,6 @@ section .nav-container{
     padding: 0;
 }
 .section-title{
-    /* font-weight: 400; */
     margin-bottom: 30px;;
 }
 #target{
@@ -162,7 +147,7 @@ section .nav-container{
 .icons{
     margin-top: 30px;
 }
-                                /* Job infor Section */
+    /* Job infor Section */
 
 /* Frame */
 #job-info .job-info-container{
@@ -224,11 +209,13 @@ ul{
 /* Experience */
 .now{
     border-radius: 6px;
-    padding: 2px;
+    padding: 4px 16px 4px 16px;
     color: #fff;
     background-color: #339af0;
 }
-
+.now-in-job{
+    border-radius: 16px;
+}
 /* Hobby */           
 .hobby{
     grid-column: 1/3;
@@ -278,7 +265,7 @@ ul{
     grid-template-rows: auto auto;
     row-gap: 28px;
 }
-                                /* Cetificate Section */
+    /* Cetificate Section */
 #certificate{
     padding: 40px;
 }                                
@@ -311,10 +298,8 @@ ul{
     text-decoration: None;
     color: #444;
 }
-                                /* Project Section*/
+    /* Project Section*/
 .container-project{
-    /* display: grid;
-    grid-template-columns: 1fr 1fr 1fr; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
@@ -323,7 +308,6 @@ ul{
 }
 .item-project{
     border: solid 1px #dee2e6;
-    /* padding: 20px; */
 }
 .project-image{
     width: 100%;
@@ -367,7 +351,7 @@ ul{
 .project-detail-table th.last-th, td.last-td{
     border-bottom: none;
 }
-                                /* Footer Section*/
+    /* Footer Section*/
 #footer .contact-container{
     margin: 0 auto;
     padding: 0, auto;
@@ -376,15 +360,10 @@ ul{
     justify-content: center;
     align-items: center;
     align-content: center;
-    gap: 80px;
+    gap: 60px;
     
 }
-
-/* .contact-footer a:link, 
-.contact-footer a:visited{
-    color: #868e96;
-    text-decoration: none;
-}     */
-/* #footer .contact-footer a:hover, a:active{
-    color: #212529;
-}                                 */
+.contact-footer{
+    display: flex;
+    align-items: center;
+}
