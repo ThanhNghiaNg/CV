@@ -35,6 +35,7 @@ section > .container{
     
 }
 .background-avatar{
+    /* display: none; */
     width: 100%;
     filter: brightness(0.65);
     position: relative;
