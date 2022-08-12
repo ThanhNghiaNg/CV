@@ -115,6 +115,10 @@
         position: absolute;
         
     }
+    .avatar{
+        display: none;
+        
+    }
     .img-avatar{
         width: 100%;
         position: absolute;
