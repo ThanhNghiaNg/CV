@@ -80,6 +80,10 @@
         width: 100%;
         border-bottom: dashed 1px #69c6cb;
     }
+    .container-timeline .element-inside-container{
+        display: grid;
+        grid-template-columns: 1fr 7fr;
+    }
     /* Scopes */
     .detail-scopes{
         display: grid;

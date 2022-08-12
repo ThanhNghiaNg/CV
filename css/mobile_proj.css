@@ -80,6 +80,10 @@
         text-justify: center;
         border: #746e8b solid 1px;
     }
+    .container-timeline .element-inside-container{
+        display: grid;
+        grid-template-columns: 1fr 7fr;
+    }
     /* Scopes */
     .detail-scopes{
         display: grid;        
