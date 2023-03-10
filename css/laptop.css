@@ -163,7 +163,7 @@
     /* Frame */
     #job-info .job-info-container{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         gap: 30px;
         padding: 0;
         margin: 60px auto 60px auto;
@@ -215,6 +215,9 @@
         width: 1em;
         margin-left: -0.8em;
         margin-top: -0.4em;
+    }
+    .inside-ul li{
+        padding-bottom: 1rem;
     }
     
     /* Experience */
